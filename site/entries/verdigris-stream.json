@@ -9,31 +9,5 @@
   "maintainers": [
     "B. Ramos",
     "T. Lindqvist"
-  ],
-  "parameters": {
-    "type": "object",
-    "properties": {
-      "dataset": {
-        "type": "string",
-        "description": "Dataset identifier to evaluate against."
-      },
-      "batch_size": {
-        "type": "integer",
-        "description": "Number of examples per evaluation batch.",
-        "default": 32
-      },
-      "metrics": {
-        "type": "array",
-        "items": {
-          "type": "string"
-        },
-        "description": "Metric names to compute."
-      },
-      "dry_run": {
-        "type": "boolean",
-        "description": "Score without writing results.",
-        "default": false
-      }
-    }
-  }
+  ]
 }
