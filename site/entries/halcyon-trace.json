@@ -8,5 +8,28 @@
   "summary": "Open tracing shim for multi-step agent runs.",
   "maintainers": [
     "B. Ramos"
-  ]
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "trace_id": {
+        "type": "string",
+        "description": "Identifier of the trace to load."
+      },
+      "include_spans": {
+        "type": "boolean",
+        "description": "Whether span-level events are returned.",
+        "default": false
+      },
+      "window_minutes": {
+        "type": "integer",
+        "description": "How far back to read, in minutes.",
+        "default": 60
+      }
+    },
+    "required": [
+      "trace_id"
+    ]
+  },
+  "code_url": "https://github.com/komal74784391-netizen/kitfolio-halcyon-trace-3176"
 }
