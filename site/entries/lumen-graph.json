@@ -1,0 +1,38 @@
+{
+  "slug": "lumen-graph",
+  "title": "Lumen Graph",
+  "kind": "tool",
+  "status": "published",
+  "channel": "labs",
+  "announced": "2026-08-14",
+  "summary": "Graph-structured retrieval planner for long-document question answering.",
+  "maintainers": [
+    "B. Ramos",
+    "K. Osei"
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "nodes": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Seed node identifiers."
+      },
+      "depth": {
+        "type": "integer",
+        "description": "Traversal depth for the graph expansion.",
+        "default": 2
+      },
+      "layout": {
+        "type": "string",
+        "enum": [
+          "radial",
+          "layered"
+        ],
+        "description": "Rendering layout for the graph view."
+      }
+    }
+  }
+}

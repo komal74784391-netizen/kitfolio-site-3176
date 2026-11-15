@@ -1,0 +1,12 @@
+{
+  "slug": "halcyon-trace",
+  "title": "Halcyon Trace",
+  "kind": "tool",
+  "status": "published",
+  "channel": "core",
+  "announced": "2026-09-25",
+  "summary": "Open tracing shim for multi-step agent runs.",
+  "maintainers": [
+    "B. Ramos"
+  ]
+}

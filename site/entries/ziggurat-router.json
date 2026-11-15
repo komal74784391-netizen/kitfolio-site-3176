@@ -1,0 +1,12 @@
+{
+  "slug": "ziggurat-router",
+  "title": "Ziggurat Router",
+  "kind": "tool",
+  "status": "published",
+  "channel": "core",
+  "announced": "2026-06-30",
+  "summary": "Adaptive request router for multi-model inference gateways.",
+  "maintainers": [
+    "B. Ramos"
+  ]
+}

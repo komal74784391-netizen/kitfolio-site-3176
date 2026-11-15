@@ -1,0 +1,13 @@
+{
+  "slug": "verdigris-stream",
+  "title": "Verdigris Stream",
+  "kind": "tool",
+  "status": "accepted",
+  "channel": "labs",
+  "announced": "2026-11-12",
+  "summary": "Streaming evaluation harness for incremental benchmark runs.",
+  "maintainers": [
+    "B. Ramos",
+    "T. Lindqvist"
+  ]
+}

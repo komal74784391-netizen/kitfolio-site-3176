@@ -1,0 +1,13 @@
+{
+  "slug": "cinder-ledger",
+  "title": "Cinder Ledger",
+  "kind": "tool",
+  "status": "published",
+  "channel": "core",
+  "announced": "2026-07-19",
+  "summary": "Cost ledger that reconciles per-call billing across model providers.",
+  "maintainers": [
+    "B. Ramos"
+  ],
+  "code_url": "https://github.com/stragenixagency/cinder-ledger"
+}

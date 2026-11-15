@@ -1,0 +1,35 @@
+{
+  "slug": "nimbus-lattice",
+  "title": "Nimbus Lattice",
+  "kind": "tool",
+  "status": "published",
+  "channel": "core",
+  "announced": "2026-10-08",
+  "summary": "Tiled inference mesh for large remote-sensing rasters.",
+  "maintainers": [
+    "B. Ramos"
+  ],
+  "code_url": "https://github.com/komal74784391-netizen/kitfolio-nimbus-lattice-3176",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "region": {
+        "type": "string",
+        "description": "Raster region code, e.g. NA-18."
+      },
+      "resolution_m": {
+        "type": "integer",
+        "description": "Output resolution in metres.",
+        "minimum": 1
+      },
+      "layers": {
+        "type": "integer",
+        "description": "Number of tiles to materialise.",
+        "default": 4
+      }
+    },
+    "required": [
+      "region"
+    ]
+  }
+}
