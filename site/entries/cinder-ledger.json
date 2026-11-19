@@ -9,5 +9,30 @@
   "maintainers": [
     "B. Ramos"
   ],
-  "code_url": "https://github.com/stragenixagency/cinder-ledger"
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "account": {
+        "type": "string",
+        "description": "Billing account identifier."
+      },
+      "period": {
+        "type": "string",
+        "description": "Reconciliation period, e.g. 2026-10."
+      },
+      "format": {
+        "type": "string",
+        "enum": [
+          "csv",
+          "json"
+        ],
+        "description": "Export format."
+      },
+      "include_summary": {
+        "type": "boolean",
+        "description": "Append a per-provider summary block.",
+        "default": true
+      }
+    }
+  }
 }

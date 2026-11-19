@@ -8,5 +8,32 @@
   "summary": "Adaptive request router for multi-model inference gateways.",
   "maintainers": [
     "B. Ramos"
-  ]
+  ],
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "prompt": {
+        "type": "string",
+        "description": "Prompt to be routed to a backend model."
+      },
+      "tier": {
+        "type": "string",
+        "enum": [
+          "auto",
+          "fast",
+          "deep"
+        ],
+        "description": "Preferred routing tier."
+      },
+      "max_tokens": {
+        "type": "integer",
+        "description": "Upper bound on generated tokens.",
+        "minimum": 1
+      }
+    },
+    "required": [
+      "prompt"
+    ]
+  },
+  "code_url": "https://github.com/komal74784391-netizen/kitfolio-ziggurat-router-3176"
 }
